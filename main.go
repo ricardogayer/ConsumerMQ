@@ -12,7 +12,7 @@ type Request struct {
 
 func main() {
 
-	amqpConnection, err := amqp.Dial("amqp://guest:password@localhost:5672/")
+	amqpConnection, err := amqp.Dial("amqp://guest:guest@localhost:5672/")
 	if err != nil {
 		log.Fatal(err)
 	}
